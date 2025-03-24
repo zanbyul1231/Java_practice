@@ -8,4 +8,4 @@ bin/
 *.zip
 
 .metadata
-.ignore
+.gitignore
