@@ -32,14 +32,23 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public List<BoardDTO> boardSelectBySubject(String keyWord) throws SearchWrongException {
-		// TODO Auto-generated method stub
-		return null;
+		List<BoardDTO> list = boardDao.boardSelectBySubject(keyWord);
+		
+		if(list.isEmpty()) {
+			throw new SearchWrongException("검색된 레코드가 없습니다.");
+		}
+		return list;
 	}
 
 	@Override
 	public BoardDTO boardSelectByNo(int boardNo) throws SearchWrongException {
-		// TODO Auto-generated method stub
-		return null;
+		BoardDTO bDTO = boardDao.boardSelectByNo(boardNo);
+		
+		if(bDTO == null) {
+			throw new SearchWrongException("검색된 레코드가 없습니다.");
+		}
+		
+		return bDTO;
 	}
 
 	@Override

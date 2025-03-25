@@ -41,7 +41,6 @@ public class BoardDAOImpl implements BoardDAO {
 				BoardDTO bDTO = new BoardDTO(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4),
 						rs.getString(5));
 
-				System.out.println(bDTO);
 				list.add(bDTO);
 			}
 
@@ -293,7 +292,7 @@ public class BoardDAOImpl implements BoardDAO {
 	 * 부모글에 해당하는 댓글정보 가져오기
 	 */
 	private List<ReplyDTO> replySelect(Connection con, int boardNo) throws SQLException {
-
+		
 		return null;
 	}
 

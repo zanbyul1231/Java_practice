@@ -10,7 +10,7 @@ public interface DBProperties {
 	
 	
 	public static final String DRVIER_NAME="com.mysql.cj.jdbc.Driver";
-	  String URL="jdbc:mysql://localhost:3306/cloud_db";
+	  String URL="jdbc:mysql://localhost:3306/mytest";
 	  String USER_ID="root";
 	  String USER_PASS="admin";
    
